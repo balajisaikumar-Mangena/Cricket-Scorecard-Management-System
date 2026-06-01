@@ -1,94 +1,184 @@
-# Cricket Scorecard Management System
+# 🏏 Cricket Scorecard Management System using LPC2148
 
-A real-time **Embedded Cricket Scorecard System** developed using the **LPC2148 ARM7 Microcontroller** and **Embedded C**.  
-This project is designed to manage live cricket scoring with ball-by-ball updates using a **Key Pad Matrix** for score input operations and a **20x4 LCD** for real-time score display.
-
-The system performs automatic calculations for match statistics including runs, wickets, overs, current run rate (CRR), and strike rate, providing an efficient embedded solution for digital cricket score management.
+A real-time embedded cricket scoring system developed using the LPC2148 ARM7TDMI-S microcontroller and Embedded C. The project simulates a professional cricket scoreboard capable of handling complete match scoring, batsman statistics, bowler statistics, innings transitions, target calculation, run-rate analysis, projected score estimation, and automatic winner declaration on a 40x2 LCD display.
 
 ---
 
-# Features
+## 📌 Overview
 
-- Real-time cricket score updates
-- Ball-by-ball score management
-- Runs, wickets, and overs calculation
-- Current Run Rate (CRR) calculation
-- Strike Rate calculation
-- Extras management (Wide, No Ball)
-- Live score display on 20x4 LCD
-- Key Pad Matrix-based user input system
-- Embedded firmware implementation using LPC2148
-- Real-time score visualization
+The Smart Cricket Scoreboard provides a complete cricket match simulation through a keypad-based scoring interface. Users can update runs, wickets, wides, no-balls, and bowler changes while the system continuously updates match statistics and player performance in real time.
 
 ---
 
-# Hardware Requirements
+## 🎯 Features
 
-- LPC2148 ARM7 Microcontroller
-- 20x4 LCD Display
-- Key Pad Matrix
+### Match Management
 
----
+* Toss Simulation
+* Bat/Bowl Selection
+* Automatic Team Assignment
+* First and Second Innings Handling
+* Target Generation
+* Match Result Determination
 
-# Software Requirements
+### Batting Features
 
-- Keil uVision
-- Proteus Simulation
+* Individual Batsman Statistics
+* Runs Scored Tracking
+* Balls Faced Tracking
+* Automatic Strike Rotation
+* Automatic New Batsman Entry After Wicket
 
----
+### Bowling Features
 
-# Working Principle
+* Runs Conceded Tracking
+* Wickets Tracking
+* Overs and Ball Count Tracking
+* Manual Bowler Selection
+* Live Bowler Statistics Display
 
-The system uses a **Key Pad Matrix** to receive match events such as runs, wickets, extras, and over updates.  
-The LPC2148 microcontroller processes the input data in real time and updates the match statistics accordingly.
+### Match Statistics
 
-The calculated values including:
-- Total Score
-- Wickets
-- Overs
-- Current Run Rate
-- Strike Rate
+* Team Score
+* Wickets Fallen
+* Overs Completed
+* Current Run Rate (CRR)
+* Projected Score (PS)
+* Target Tracking
 
-are continuously displayed on the **20x4 LCD**.
+### Result Processing
 
-The project is fully simulated and tested using **Proteus** and firmware is developed using **Keil uVision**.
-
----
-
-# Project Highlights
-
-- Developed complete firmware using Embedded C
-- Implemented Key Pad Matrix interfacing
-- Implemented 20x4 LCD interfacing
-- Real-time cricket score processing
-- Optimized embedded logic for score calculations
-- Designed and tested using Proteus simulation
-- Developed using LPC2148 ARM7 architecture
-
----
-
-# Technologies Used
-
-- Embedded C
-- ARM7 LPC2148
-- LCD Interfacing
-- Key Pad Matrix Interfacing
-- Keil uVision
-- Proteus Simulation
+* Chasing Team Victory Detection
+* Defending Team Victory Detection
+* Tie Match Detection
 
 ---
 
-# Future Enhancements
+## 📟 LCD Display Format
 
-- Wireless score transmission
-- EEPROM-based score storage
-- RTC integration for match timing
-- Multiple innings support
+The LCD displays:
+
+* Batting Team
+* Team Score
+* Overs
+* Current Run Rate
+* Projected Score
+* Striker Statistics
+* Non-Striker Statistics
+* Current Bowler Statistics
 
 ---
 
-# Author
+## ⌨️ Keypad Controls
 
-**Balaji Sai Kumar Mangena**  
-Embedded Systems Enthusiast  
-Passionate about Embedded Systems, Firmware Development, and Automotive Embedded Technologies.
+|  Key  |       Action       |
+| ----- | ------------------ |
+|   0   |   Dot Ball         |
+|   1   |   Single           |
+|   2   |   Two Runs         |
+|   3   |   Three Runs       |
+|   4   |   Four Runs        |
+|   6   |   Six Runs         |
+|   *   |   Wicket           |
+|   /   |   No Ball          |
+|   -   |   Wide Ball        |
+|   +   |   Change Bowler    |
+|   =   |   Confirm Bowler   |
+
+---
+
+## 🛠️ Hardware Requirements
+
+* LPC2148 ARM7TDMI-S Microcontroller
+* 40x2 LCD Display
+* 4x4 Matrix Keypad
+* Power Supply
+
+---
+
+## 💻 Software & Tools
+
+* Embedded C
+* Keil uVision IDE
+* Proteus Professional
+* Flash Magic
+
+---
+
+## 🔬 Simulation
+
+The complete system was designed and validated using Proteus Professional. The simulation includes:
+
+* LPC2148 Microcontroller
+* 40x2 LCD Interface
+* Matrix Keypad Interface
+* Complete Cricket Scoring Logic
+
+The simulation was used to verify score updates, strike rotation, bowler statistics, innings transitions, target calculation, and winner determination before hardware implementation.
+
+---
+
+## 🏗️ System Architecture
+
+---
+
+## 📊 Calculations
+
+### Current Run Rate
+
+```text
+CRR = (Runs × 6) / Balls Faced
+```
+
+### Projected Score
+
+```text
+Projected Score = CRR × Total Overs
+```
+
+### Target
+
+```text
+Target = First Innings Score + 1
+```
+
+---
+
+## 🎓 Concepts Implemented
+
+* Embedded C Programming
+* Structures and Pointers
+* ARM7 LPC2148 Programming
+* LCD Interfacing
+* Matrix Keypad Interfacing
+* Real-Time Event Handling
+* State-Based Application Design
+* Cricket Scoring Algorithms
+
+---
+
+## ⭐ Project Highlights
+
+* Real-Time Cricket Match Simulation
+* Professional LCD Scoreboard Interface
+* Dynamic Batsman and Bowler Statistics
+* Automatic Innings Management
+* Target Chasing Logic
+* Winner Determination System
+* LPC2148 ARM7TDMI-S Based Design
+* Proteus Professional Simulation
+* Modular Embedded C Architecture
+
+---
+
+## 🚀 Future Enhancements
+
+* UART Score Transmission
+* CAN Bus Integration
+* EEPROM Match Storage
+* RTC Integration
+* Wireless Scoreboard
+* Mobile App Connectivity
+* Match History Storage
+  
+---
