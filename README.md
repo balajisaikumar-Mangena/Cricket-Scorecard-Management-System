@@ -10,6 +10,17 @@ The Smart Cricket Scoreboard provides a complete cricket match simulation throug
 
 ---
 
+## 🔌 Circuit Diagram
+
+The complete Smart Cricket Scoreboard hardware was designed and verified using Proteus Professional. The system consists of an LPC2148 ARM7TDMI-S microcontroller interfaced with a 40x2 LCD display and a 4x4 matrix keypad for real-time score entry and display.
+
+<p align="center">
+<img width="978" height="600" alt="Circuit Diagram" src="https://github.com/user-attachments/assets/c51afe4f-c236-4476-8a68-666dce120914" />
+
+</p>
+
+---
+
 ## 🎯 Features
 
 ### Match Management
