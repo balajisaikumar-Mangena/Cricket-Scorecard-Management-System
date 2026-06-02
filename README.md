@@ -21,62 +21,128 @@ The complete Smart Cricket Scoreboard hardware was designed and verified using P
 
 ---
 
-## 🎯 Features
+🎯 Features
 
-### Match Management
+🏏 Match Management
 
-* Toss Simulation
-* Bat/Bowl Selection
-* Automatic Team Assignment
-* First and Second Innings Handling
-* Target Generation
-* Match Result Determination
-
-### Batting Features
-
-* Individual Batsman Statistics
-* Runs Scored Tracking
-* Balls Faced Tracking
-* Automatic Strike Rotation
-* Automatic New Batsman Entry After Wicket
-
-### Bowling Features
-
-* Runs Conceded Tracking
-* Wickets Tracking
-* Overs and Ball Count Tracking
-* Manual Bowler Selection
-* Live Bowler Statistics Display
-
-### Match Statistics
-
-* Team Score
-* Wickets Fallen
-* Overs Completed
-* Current Run Rate (CRR)
-* Projected Score (PS)
-* Target Tracking
-
-### Result Processing
-
-* Chasing Team Victory Detection
-* Defending Team Victory Detection
-* Tie Match Detection
+* Toss Simulation for determining the batting and bowling team.
+* Bat/Bowl Selection based on toss outcome.
+* Dynamic Team Assignment.
+* Complete First and Second Innings Management.
+* Automatic Innings Transition.
+* Automatic Target Generation after the first innings.
+* Real-Time Match State Management.
+* Automatic Match Completion Detection.
+* Winner Determination Logic.
 
 ---
 
-## 📟 LCD Display Format
+🏏 Batting Features
 
-The LCD displays:
+* Individual Batsman Statistics Tracking.
+* Runs Scored Tracking.
+* Balls Faced Tracking.
+* Strike Rate Calculation.
+* Automatic Strike Rotation on Singles and Triples.
+* Strike Change at the End of Every Over.
+* Automatic New Batsman Entry after Wicket.
+* Support for Complete Batting Line-up.
+* Live Striker and Non-Striker Management.
+* Not-Out Batsman Tracking.
 
-* Batting Team
-* Team Score
-* Overs
-* Current Run Rate
-* Projected Score
-* Striker Statistics
-* Non-Striker Statistics
-* Current Bowler Statistics
+---
+
+🎳 Bowling Features
+
+* Individual Bowler Statistics Tracking.
+* Runs Conceded Tracking.
+* Wickets Tracking.
+* Overs and Ball Count Tracking.
+* Bowling Figure Management.
+* Manual Bowler Selection.
+* Automatic Over Completion Handling.
+* Live Bowler Statistics Display.
+
+---
+
+➕ Extras Management
+
+No Ball
+
+* Adds Extra Run to Team Score.
+* Runs scored after No Ball are added to Team Total.
+* Runs scored after No Ball are added to Batsman Score.
+* Bowler Concedes Extra Runs.
+* Delivery is treated as an Extra Ball.
+* Automatically Triggers Free Hit.
+
+Free Hit
+
+* Automatically Activated after No Ball.
+* Runs are counted normally.
+* Supports Strike Rotation.
+* Free Hit Status Management.
+* Real-Time Free Hit Processing.
+
+Wide Ball
+
+* Adds Extra Run to Team Score.
+* Additional Wide Runs Supported.
+* Delivery is treated as an Extra Ball.
+* Batsman Ball Count Remains Unchanged.
+* Bowler Concedes Wide Runs.
+
+---
+
+📊 Match Statistics
+
+* Team Score Tracking.
+* Wickets Fallen Tracking.
+* Overs Completed Tracking.
+* Current Run Rate (CRR) Calculation.
+* Projected Score (PS) Calculation.
+* Target Tracking During Chase.
+* Live Match Summary Display.
+* Real-Time Scoreboard Updates.
+
+---
+
+📟 LCD Scoreboard Features
+
+* Professional 40x2 LCD User Interface.
+* Live Team Score Display.
+* Wickets Display.
+* Overs Display.
+* Current Run Rate (CRR) Display.
+* Projected Score (PS) Display.
+* Striker Statistics Display.
+* Non-Striker Statistics Display.
+* Current Bowler Statistics Display.
+* Match Result Display.
+
+---
+
+🔄 Match Flow Features
+
+* Ball-by-Ball Score Updates.
+* Real-Time Statistics Update.
+* Automatic Strike Management.
+* Automatic Over Completion Handling.
+* Automatic Bowler Change Request.
+* Innings Completion Detection.
+* Target Chase Monitoring.
+* Match End Detection.
+
+---
+
+🏆 Result Processing
+
+* Chasing Team Victory Detection.
+* Defending Team Victory Detection.
+* Tie Match Detection.
+* All-Out Match Handling.
+* Target Achieved Detection.
+* Automatic Winner Announcement.
 
 ---
 
