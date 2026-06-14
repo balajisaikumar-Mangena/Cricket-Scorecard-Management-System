@@ -1,4 +1,4 @@
-# 🏏 Cricket Scorecard Management System using LPC2148
+# 🏏 Real-Time Cricket Scorecard Management System using LPC2148
 
 A real-time embedded cricket scoring system developed using the LPC2148 ARM7TDMI-S microcontroller and Embedded C. The project simulates a professional cricket scoreboard capable of handling complete match scoring, batsman statistics, bowler statistics, innings transitions, target calculation, run-rate analysis, projected score estimation, and automatic winner declaration on a 40x2 LCD display.
 
